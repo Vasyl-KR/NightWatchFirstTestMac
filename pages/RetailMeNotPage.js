@@ -3,6 +3,17 @@ module.exports = {
     elements: {
         searchBar: {
             selector: '.js-search-query'
+        },
+        searchBarXPath: {
+            selector:'//input[@type = "search"]',
+            locateStrategy : 'xpath'
+        },
+        cashBackItem: {
+            selector: 'a[href="/cashback"]'
+        },
+        giftCardDealsItem: {
+            selector: 'a[href="/giftcards"]'
         }
+
     }
 };

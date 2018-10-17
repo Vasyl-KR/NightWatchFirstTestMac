@@ -1,17 +1,19 @@
 module.exports = {
 
-    'RetailMeNotSearch' : function (browser) {
+    after : function(browser) {
+        browser.end();
+    },
+    'ItemsClickTest' : function (browser) {
 
         var retail = browser.page.RetailMeNotPage();
 
 
         retail.navigate()
             .assert.title('RetailMeNot: Coupons, Cash Back, Gift Card Deals, Genie & More')
-            .setValue('@searchBar', 'XZ');
-            browser.keys(browser.Keys.ENTER);
+            .click('@cashBackItem')
+            .click('@giftCardDealsItem');
 
-        browser.pause(2000).end();
+    },
 
-    }
 
 };
