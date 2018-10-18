@@ -1,6 +1,6 @@
 module.exports = {
 
-    'Demo test Google' : function (browser) {
+    'Demo test Google' : '' +function (browser) {
 
         var google = browser.page.googlePage();
 

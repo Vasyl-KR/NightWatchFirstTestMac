@@ -17,7 +17,7 @@ module.exports = {
     },
     'RetailMeNotSearchXPath' : function (browser) {
 
-        var retail = browser.page.RetailMeNotPage();
+        var retail = browser.page.RetailMeNotHomePage();
 
 
         retail.navigate()

@@ -15,12 +15,12 @@ module.exports = {
             .sendKeys('@emailInput','notExist@email.com')
             .sendKeys('@passwordInput', 'notExist')
             .click('@logInButton');
-//
-        //browser.expect.element('@errorField').to.be.present;
+        //    .waitForElementVisible('@errorField',10000);
+
 
         register
          //   .assert.visible('@errorField')
-         //   .assert.containsText('@errorField', 'Email and/or password is incorrect');
+         //   .assert.containsText('@errorField', 'Email and/or password is incorrect')
             .assert.title('Log in');
 
     },

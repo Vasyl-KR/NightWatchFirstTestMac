@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7cfa75a-fd07-4fca-b393-da1e40a3f68d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/reports/CHROME_70.0.3538.67_Mac OS X_NavigatorBarTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/reports/CHROME_70.0.3538.67_Mac OS X_NavigatorBarTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/CHROME_70.0.3538.67_Mac OS X_NegativeLogInTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/reports/CHROME_70.0.3538.67_Mac OS X_NegativeLogInTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/CHROME_70.0.3538.67_Mac OS X_SearchTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/reports/CHROME_70.0.3538.67_Mac OS X_SearchTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selenium-debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/selenium-debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/FirstTest.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/FirstTest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/NavigatorBarTest.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/NavigatorBarTest.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/NegativeLogInTest.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/NegativeLogInTest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/SearchTest.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/SearchTest.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,7 +33,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="SecondTest" value="1" />
-          <entry key="js" value="11" />
+          <entry key="js" value="12" />
           <entry key="json" value="4" />
           <entry key="xml" value="1" />
         </counts>
@@ -34,7 +41,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JSON" value="4" />
-          <entry key="JavaScript" value="11" />
+          <entry key="JavaScript" value="12" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="XML" value="1" />
         </counts>
@@ -42,14 +49,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="NavBarTest" value="39" />
-          <entry key="js" value="1119" />
+          <entry key="js" value="1228" />
           <entry key="json" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="16" />
-          <entry key="JavaScript" value="1156" />
+          <entry key="JavaScript" value="1265" />
           <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
@@ -78,8 +85,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/NavigatorBarTest.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="35" lean-forward="true" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+            <state relative-caret-position="405">
+              <caret line="27" column="2" lean-forward="true" selection-start-line="27" selection-start-column="2" selection-end-line="27" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -87,8 +94,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/SearchTest.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="450">
+              <caret line="30" column="2" lean-forward="true" selection-start-line="30" selection-start-column="2" selection-end-line="30" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -96,8 +103,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/NegativeLogInTest.js">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/FirstTest.js">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="17" column="2" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
+              <caret line="17" column="2" lean-forward="true" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -120,15 +136,15 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/nightwatch.json" />
         <option value="$PROJECT_DIR$/tests/homepage.js" />
-        <option value="$PROJECT_DIR$/tests/FirstTest.js" />
         <option value="$PROJECT_DIR$/tests/SecondTest.js" />
         <option value="$PROJECT_DIR$/tests/NavBarTest" />
         <option value="$PROJECT_DIR$/tests/NavBarTest.js" />
         <option value="$PROJECT_DIR$/tests/k.js" />
         <option value="$PROJECT_DIR$/pages/RetailMeNotPage.js" />
-        <option value="$PROJECT_DIR$/tests/SearchTest.js" />
-        <option value="$PROJECT_DIR$/tests/NavigatorBarTest.js" />
         <option value="$PROJECT_DIR$/pages/RegisterPage.js" />
+        <option value="$PROJECT_DIR$/tests/NavigatorBarTest.js" />
+        <option value="$PROJECT_DIR$/tests/SearchTest.js" />
+        <option value="$PROJECT_DIR$/tests/FirstTest.js" />
         <option value="$PROJECT_DIR$/tests/NegativeLogInTest.js" />
       </list>
     </option>
@@ -222,21 +238,21 @@
       <option name="presentableId" value="Default" />
       <updated>1539775697343</updated>
       <workItem from="1539775699840" duration="10079000" />
-      <workItem from="1539850445941" duration="4769000" />
+      <workItem from="1539850445941" duration="6205000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14848000" />
+    <option name="totallyTimeSpent" value="16284000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="240" y="63" width="1441" height="968" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.24225353" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.24225353" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.32990867" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.32990867" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -283,13 +299,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/FirstTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nightwatch.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -301,20 +310,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/SearchTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/NavigatorBarTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="35" lean-forward="true" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -332,10 +327,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/NegativeLogInTest.js">
+    <entry file="file://$PROJECT_DIR$/tests/NavigatorBarTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="2" lean-forward="true" selection-start-line="27" selection-start-column="2" selection-end-line="27" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/FirstTest.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="17" column="2" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
+          <caret line="17" column="2" lean-forward="true" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/SearchTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="2" lean-forward="true" selection-start-line="30" selection-start-column="2" selection-end-line="30" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/NegativeLogInTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
         </state>
       </provider>
     </entry>
