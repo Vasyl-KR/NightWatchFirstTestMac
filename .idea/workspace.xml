@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7cfa75a-fd07-4fca-b393-da1e40a3f68d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/RetailMeNotPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/RetailMeNotHomePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/CHROME_70.0.3538.67_Mac OS X_NavigatorBarTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/reports/CHROME_70.0.3538.67_Mac OS X_NavigatorBarTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/CHROME_70.0.3538.67_Mac OS X_SearchTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/reports/CHROME_70.0.3538.67_Mac OS X_SearchTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/selenium-debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/selenium-debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/NavigatorBarTest.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/NavigatorBarTest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/SearchTest.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/SearchTest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/NegativeLogInTest.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/NegativeLogInTest.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -63,7 +57,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/RetailMeNotHomePage.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
@@ -99,11 +93,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/NegativeLogInTest.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="255">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -228,21 +222,21 @@
       <option name="presentableId" value="Default" />
       <updated>1539775697343</updated>
       <workItem from="1539775699840" duration="10079000" />
-      <workItem from="1539850445941" duration="4505000" />
+      <workItem from="1539850445941" duration="4621000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14584000" />
+    <option name="totallyTimeSpent" value="14700000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="240" y="63" width="1441" height="968" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.24225353" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.24225353" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.32990867" />
+      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.32990867" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -310,13 +304,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/NegativeLogInTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/SearchTest.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -342,6 +329,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="2" lean-forward="true" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/NegativeLogInTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>

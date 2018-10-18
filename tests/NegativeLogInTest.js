@@ -15,7 +15,7 @@ module.exports = {
             .sendKeys('@emailInput','notExist@email.com')
             .sendKeys('@passwordInput', 'notExist')
             .click('@logInButton');
-        //browser.pause(2000);
+
         //browser.expect.element('@errorField').to.be.present;
 
         register
