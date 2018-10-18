@@ -3,17 +3,26 @@ module.exports = {
     after : function(browser) {
         browser.end();
     },
-    'ItemsClickTest' : function (browser) {
+    'CashBackClickTest' : function (browser) {
+
+        var retail = browser.page.RetailMeNotHomePage();
+
+
+        retail.navigate()
+            .click('@cashBackItem')
+            .assert.containsText('h3.top-offers-section-title', 'Featured Cash Back Offers')
+            .click('@giftCardDealsItem');
+
+    },
+    'GiftCardDealsClickTest' : function (browser) {
 
         var retail = browser.page.RetailMeNotPage();
 
 
         retail.navigate()
-            .assert.title('RetailMeNot: Coupons, Cash Back, Gift Card Deals, Genie & More')
-            .click('@cashBackItem')
-            .click('@giftCardDealsItem');
+            .click('@giftCardDealsItem')
+            .assert.containsText('h3.top-offers-section-title', 'Featured Gift Card Deals');
 
     },
-
 
 };

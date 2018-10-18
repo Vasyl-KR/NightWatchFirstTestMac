@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="0"
-            failures="1"
-            tests="1">
+            failures="0"
+            tests="2">
 
   <testsuite name="NavigatorBarTest"
-    errors="0" failures="1" hostname="" id="" package="NavigatorBarTest" skipped="0"
-    tests="1" time="4.716" timestamp="Wed, 17 Oct 2018 15:49:19 GMT">
+    errors="0" failures="0" hostname="" id="" package="NavigatorBarTest" skipped="0"
+    tests="2" time="10.24" timestamp="Thu, 18 Oct 2018 09:04:46 GMT">
   
-    <testcase name="ItemsClickTest" classname="NavigatorBarTest" time="4.716" assertions="1">  <failure message="Testing if the page title equals &#34;RetailMeNot.: Coupons, Cash Back, Gift Card Deals, Genie &amp; More&#34;.">    at Object.ItemsClickTest (/Users/vkyry/WebstormProjects/NightWatchFirstTest/tests/NavigatorBarTest.js:12:21)</failure>
+    <testcase name="CashBackClickTest" classname="NavigatorBarTest" time="7.313" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="GiftCardDealsClickTest" classname="NavigatorBarTest" time="2.924" assertions="1">
 
     
     </testcase>

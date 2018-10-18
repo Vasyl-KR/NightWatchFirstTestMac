@@ -13,6 +13,9 @@ module.exports = {
         },
         giftCardDealsItem: {
             selector: 'a[href="/giftcards"]'
+        },
+        logInButton : {
+            selector: '[tabindex]'
         }
 
     }

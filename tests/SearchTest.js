@@ -5,24 +5,26 @@ module.exports = {
     },
     'RetailMeNotSearch' : function (browser) {
 
-        var retail = browser.page.RetailMeNotPage();
+        var retail = browser.page.RetailMeNotHomePage();
 
 
         retail.navigate()
             .assert.title('RetailMeNot: Coupons, Cash Back, Gift Card Deals, Genie & More')
-            .setValue('@searchBar', 'Acer');
-            browser.keys(browser.Keys.ENTER);
+            .setValue('@searchBar', 'Acer')
+            .sendKeys('@searchBar', browser.Keys.ENTER)
+            .assert.containsText('h1.category-title', 'Acer', 'Search failed');
 
     },
-    'RetailMeNotSearch2' : function (browser) {
+    'RetailMeNotSearchXPath' : function (browser) {
 
         var retail = browser.page.RetailMeNotPage();
 
 
         retail.navigate()
             .assert.title('RetailMeNot: Coupons, Cash Back, Gift Card Deals, Genie & More')
-            .setValue('@searchBarXPath', 'Acer');
-        browser.keys(browser.Keys.ENTER);
+            .setValue('@searchBarXPath', 'Acer')
+            .sendKeys('@searchBarXPath', browser.Keys.ENTER);
+
 
     }
 
