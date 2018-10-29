@@ -3,7 +3,9 @@ module.exports = {
     after : function(browser) {
         browser.end();
     },
-    'RetailMeNotSearch' : function (browser) {
+    'RetailMeNotSearch' : browser => {
+
+        const PRODUCT_NAME = 'Acer';
 
         var retail = browser.page.RetailMeNotHomePage();
         retail.navigate();
@@ -11,22 +13,9 @@ module.exports = {
 
         navigationBar
             .assert.title('RetailMeNot: Coupons, Cash Back, Gift Card Deals, Genie & More')
-            .setValue('@searchBar', 'Acer')
-            .sendKeys('@searchBar', browser.Keys.ENTER)
-            .assert.containsText('h1.category-title', 'Acer', 'Search failed');
-
-    },
-    'RetailMeNotSearchXPath' : function (browser) {
-
-        var retail = browser.page.RetailMeNotHomePage();
-        retail.navigate();
-        var navigationBar = retail.section.navigateBar;
-
-        navigationBar
-            .assert.title('RetailMeNot: Coupons, Cash Back, Gift Card Deals, Genie & More')
-            .setValue('@searchBarXPath', 'Acer')
-            .sendKeys('@searchBarXPath', browser.Keys.ENTER);
-
+            .setSearchValue(PRODUCT_NAME)
+            .submitSearchValue(browser)
+            .assert.containsText('h1.category-title', PRODUCT_NAME, 'Search failed');
 
     }
 

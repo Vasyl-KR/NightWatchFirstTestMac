@@ -1,8 +1,20 @@
+var retailCommands = {
+    setSearchValue: function (name) {
+        return this.setValue('@searchBar', name);
+    },
+    submitSearchValue : function (browser) {
+        return this.sendKeys('@searchBar', browser.Keys.ENTER);
+    }
+};
+
+
 module.exports = {
     url: 'https://www.retailmenot.com/',
+
     sections: {
         navigateBar: {
             selector: 'header.site-header',
+            commands: [retailCommands],
             elements: {
                 searchBar: {
                     selector: '.js-search-query'
