@@ -1,2 +1,2 @@
 *.xml
-selenium-debug.log
+*selenium-debug.log
