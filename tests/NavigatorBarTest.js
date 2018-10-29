@@ -6,9 +6,11 @@ module.exports = {
     'CashBackClickTest' : function (browser) {
 
         var retail = browser.page.RetailMeNotHomePage();
+        retail.navigate();
+        var navigationBar = retail.section.navigateBar;
 
 
-        retail.navigate()
+        navigationBar
             .click('@cashBackItem')
             .assert.containsText('h3.top-offers-section-title', 'Featured Cash Back Offers')
             .click('@giftCardDealsItem');
@@ -17,9 +19,10 @@ module.exports = {
     'GiftCardDealsClickTest' : function (browser) {
 
         var retail = browser.page.RetailMeNotHomePage();
+        retail.navigate();
+        var navigationBar = retail.section.navigateBar;
 
-
-        retail.navigate()
+        navigationBar
             .click('@giftCardDealsItem')
             .assert.containsText('h3.top-offers-section-title', 'Featured Gift Card Deals');
 

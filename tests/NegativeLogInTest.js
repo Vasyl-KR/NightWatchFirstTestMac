@@ -6,9 +6,11 @@ module.exports = {
     'NegativeLogIn' : function (browser) {
 
         var retail = browser.page.RetailMeNotHomePage();
+        retail.navigate();
+        var navigationBar = retail.section.navigateBar;
         var register = browser.page.RegisterPage();
 
-        retail.navigate()
+        navigationBar
             .click('@logInButton')
             .click('[data-qa="log-in-link"]');
         register

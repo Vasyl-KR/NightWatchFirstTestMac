@@ -6,9 +6,10 @@ module.exports = {
     'RetailMeNotSearch' : function (browser) {
 
         var retail = browser.page.RetailMeNotHomePage();
+        retail.navigate();
+        var navigationBar = retail.section.navigateBar;
 
-
-        retail.navigate()
+        navigationBar
             .assert.title('RetailMeNot: Coupons, Cash Back, Gift Card Deals, Genie & More')
             .setValue('@searchBar', 'Acer')
             .sendKeys('@searchBar', browser.Keys.ENTER)
@@ -18,9 +19,10 @@ module.exports = {
     'RetailMeNotSearchXPath' : function (browser) {
 
         var retail = browser.page.RetailMeNotHomePage();
+        retail.navigate();
+        var navigationBar = retail.section.navigateBar;
 
-
-        retail.navigate()
+        navigationBar
             .assert.title('RetailMeNot: Coupons, Cash Back, Gift Card Deals, Genie & More')
             .setValue('@searchBarXPath', 'Acer')
             .sendKeys('@searchBarXPath', browser.Keys.ENTER);
