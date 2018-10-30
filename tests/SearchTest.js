@@ -1,3 +1,5 @@
+var pageConst = require('../pages/RetailMeNotHomePage.js');
+
 module.exports = {
 
     after : function(browser) {
@@ -5,17 +7,18 @@ module.exports = {
     },
     'RetailMeNotSearch' : browser => {
 
-        const PRODUCT_NAME = 'Acer';
 
         var retail = browser.page.RetailMeNotHomePage();
-        retail.navigate();
+        var search = browser.page.SearchPage();
         var navigationBar = retail.section.navigateBar;
 
+        retail.navigate();
         navigationBar
-            .assert.title('RetailMeNot: Coupons, Cash Back, Gift Card Deals, Genie & More')
-            .setSearchValue(PRODUCT_NAME)
-            .submitSearchValue()
-            .assert.containsText('h1.category-title', PRODUCT_NAME, 'Verify search');
+            .assert.title(pageConst.expected.TITLE)
+            .setSearchValue(pageConst.expected.PRODUCT)
+            .submitSearchValue();
+        search
+            .assertSearchText(pageConst.expected.PRODUCT);
 
 
     }

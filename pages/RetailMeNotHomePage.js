@@ -7,18 +7,20 @@ var retailCommands = {
     },
 
     submitSearchValue : function () {
-        logger.Mylogger.info('Submiting search form...');
+        logger.Mylogger.info('Submitting search form...');
         return this.submitForm('@searchBar');
-    }
-
+    },
 };
 
-var constants
+var constant = {
+    TITLE : 'RetailMeNot: Coupons, Cash Back, Gift Card Deals, Genie & More',
+    PRODUCT : 'HP'
+}
 
 
 module.exports = {
     url: 'https://www.retailmenot.com/',
-
+    expected: constant,
     sections: {
         navigateBar: {
             selector: 'header.site-header',
@@ -40,6 +42,7 @@ module.exports = {
                 logInButton: {
                     selector: '[tabindex]'
                 }
+
             }
         }
     }
