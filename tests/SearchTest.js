@@ -7,17 +7,12 @@ module.exports = {
     },
     'RetailMeNotSearch' : browser => {
 
-
-        var retail = browser.page.RetailMeNotHomePage();
-        var search = browser.page.SearchPage();
-        var navigationBar = retail.section.navigateBar;
-
-        retail.navigate();
-        navigationBar
+        browser.
+        page.RetailMeNotHomePage()
+            .navigate().section.navigateBar
             .assert.title(pageConst.expected.TITLE)
             .setSearchValue(pageConst.expected.PRODUCT)
-            .submitSearchValue();
-        search
+            .submitSearchValue().api.page.SearchPage()
             .assertSearchText(pageConst.expected.PRODUCT);
 
 
