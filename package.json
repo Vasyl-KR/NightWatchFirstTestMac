@@ -1,5 +1,6 @@
 {
-  "scripts": {
-    "test-e2e": "nightwatch"
+  "dependencies": {
+    "nightwatch": "^0.9.21",
+    "logger": "^0.0.1"
   }
 }

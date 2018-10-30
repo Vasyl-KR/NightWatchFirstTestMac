@@ -14,8 +14,9 @@ module.exports = {
         navigationBar
             .assert.title('RetailMeNot: Coupons, Cash Back, Gift Card Deals, Genie & More')
             .setSearchValue(PRODUCT_NAME)
-            .submitSearchValue(browser)
-            .assert.containsText('h1.category-title', PRODUCT_NAME, 'Search failed');
+            .submitSearchValue()
+            .assert.containsText('h1.category-title', PRODUCT_NAME, 'Verify search');
+
 
     }
 

@@ -1,11 +1,19 @@
+var logger = require('../MyLogger.js');
+
 var retailCommands = {
     setSearchValue: function (name) {
+        logger.Mylogger.info('Setting product name...');
         return this.setValue('@searchBar', name);
     },
-    submitSearchValue : function (browser) {
-        return this.sendKeys('@searchBar', browser.Keys.ENTER);
+
+    submitSearchValue : function () {
+        logger.Mylogger.info('Submiting search form...');
+        return this.submitForm('@searchBar');
     }
+
 };
+
+var constants
 
 
 module.exports = {
