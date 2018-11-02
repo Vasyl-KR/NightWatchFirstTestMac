@@ -2,6 +2,7 @@
   "src_folders" : ["tests"],
   "output_folder" : "reports",
   "page_objects_path": "pages",
+  "custom_assertions_path": "custom",
 
   "selenium" : {
     "start_process" : true,
@@ -22,6 +23,7 @@
         "browserName": "chrome",
         "javascriptEnabled": true,
         "acceptSslCerts": true
+
       }
     }
   }
