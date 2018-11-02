@@ -10,6 +10,7 @@ var retailCommands = {
         logger.Mylogger.info('Submitting search form...');
         return this.submitForm('@searchBar');
     },
+
 };
 
 var constant = {

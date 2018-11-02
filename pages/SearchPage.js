@@ -3,6 +3,12 @@ var searchCommands = {
     assertSearchText: function (name) {
         logger.Mylogger.info('Checking search...');
         return this.assert.containsText('@categoryTitle', name, 'Verify search');
+
+    },
+    screenshot : function () {
+        logger.Mylogger.warn('Making screenshot...');
+        this.api.saveScreenshot('screen.png');
+        return this;
     }
 };
 
