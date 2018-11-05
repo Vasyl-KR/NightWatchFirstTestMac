@@ -5,11 +5,11 @@ module.exports = {
     after : function(browser) {
         browser.end();
     },
-    'attributeCheck' : function (browser) {
+    'numberCheck' : function (browser) {
 
         browser
             .page.googlePage().navigate()
-            .assert.assertElementsNumber('@inputButtons', 9)
+            .assert.elementsNumber(pageConst.elements.inputButtons.selector, 9)
             .clickLuckyButton();
 
     },

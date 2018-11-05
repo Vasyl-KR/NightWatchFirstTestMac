@@ -1,6 +1,5 @@
-var logger = require('../MyLogger.js');
 const util = require('util');
-
+var logger = require('../MyLogger.js');
 
 exports.assertion = function(selector, number, msg) {
 
@@ -27,7 +26,6 @@ exports.assertion = function(selector, number, msg) {
     };
 
     this.value = function(result) {
-        logger.Mylogger.info(result.value);
         return result.value.length;
     };
 
