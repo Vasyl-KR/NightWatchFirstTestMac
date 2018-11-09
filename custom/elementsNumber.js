@@ -1,5 +1,4 @@
 const util = require('util');
-var logger = require('../MyLogger.js');
 
 exports.assertion = function(selector, number, msg) {
 
