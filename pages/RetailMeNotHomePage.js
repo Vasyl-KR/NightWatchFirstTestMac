@@ -17,30 +17,34 @@ var footerCommands = {
     AssertHrefs: function () {
         var links = [];
         this.api.elements(this.client.locateStrategy, '.site-footer-nav a', function (result) {
-            var j = 0;
-            for (var i in result.value) {
+            for (let i in result.value) {
                 this.elementIdAttribute(result.value[i].ELEMENT, 'href', function (result) {
-                     links[j]=result.value;
-                     j++;
-
+                     links[i]=result.value;
                 });
                 //logger.Mylogger.info(links);
             }
         }).perform(function () {
                 var client = this.api.page.RetailMeNotHomePage()
-                logger.Mylogger.info(links);
-                for (var i in links) {
+               // logger.Mylogger.info(links);
+                var randomLink = _.sample(links);
+                logger.Mylogger.info('Randomly chosen this link ' +randomLink +'...');
+                var selector = '.site-footer-nav a[href*=\''+_.replace(randomLink, client.url, '')+'\']';
+                client.section.footer.click(selector)
+                    .assert.urlEquals(randomLink, 'Verifying that url right');
 
-                    var selector = '.site-footer-nav a[href*=\''+_.replace(links[i], 'https://www.rmnstage.com', '')+'\']';
+
+             /*   for (var i in links) {
+
+                    var selector = '.site-footer-nav a[href*=\''+_.replace(links[i], client.url, '')+'\']';
                     client.section.footer.click(selector)
                         .verify.urlEquals(links[i])
+                        .api.page.RetailMeNotHomePage().navigate();
 
-                    .api.page.RetailMeNotHomePage().navigate();
-
-                }
+                } */
 
         }
         );
+
     },
     linkClick: function () {
 
