@@ -22,9 +22,9 @@ getElementsText.prototype.command = function(selector) {
         }
     }).perform(function () {
          self.emit('complete');
+        logger.Mylogger.info(elText);
          return elText;
     });
-    this.emit('complete');
 };
 
 module.exports = getElementsText;

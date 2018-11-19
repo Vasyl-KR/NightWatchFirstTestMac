@@ -12,8 +12,9 @@ module.exports = {
             .navigate().section.navigateBar
             .assert.title(pageConst.expected.TITLE)
             .setSearchValue(pageConst.expected.PRODUCT)
-            .submitSearchValue().api.page.SearchPage()
-            .getElementsText('.js-facet-label');
+            .submitSearchValue()
+            //.api.page.SearchPage()
+            . getTexts();
             //.assertSearchText(pageConst.expected.PRODUCT);
 
 
