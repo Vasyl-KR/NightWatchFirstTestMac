@@ -13,8 +13,8 @@ module.exports = {
             .assert.title(pageConst.expected.TITLE)
             .setSearchValue(pageConst.expected.PRODUCT)
             .submitSearchValue().api.page.SearchPage()
-            .screenshot()
-            .assertSearchText(pageConst.expected.PRODUCT);
+            .getElementsText('.js-facet-label');
+            //.assertSearchText(pageConst.expected.PRODUCT);
 
 
     }

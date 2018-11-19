@@ -24,18 +24,19 @@ var footerCommands = {
                 //logger.Mylogger.info(links);
             }
         }).perform(function () {
-                var client = this.api.page.RetailMeNotHomePage()
+                var client = this.api.page.RetailMeNotHomePage();
                // logger.Mylogger.info(links);
                 var randomLink = _.sample(links);
-                logger.Mylogger.info('Randomly chosen this link ' +randomLink +'...');
-                var selector = '.site-footer-nav a[href*=\''+_.replace(randomLink, client.url, '')+'\']';
+                logger.Mylogger.info(`Randomly chosen this link ${randomLink} ...`);
+                logger.Mylogger.info('Clicking on the link ...');
+                var selector = `.site-footer-nav a[href*=\'${_.replace(randomLink, client.url, '')}\']`;
                 client.section.footer.click(selector)
                     .assert.urlEquals(randomLink, 'Verifying that url right');
 
 
              /*   for (var i in links) {
 
-                    var selector = '.site-footer-nav a[href*=\''+_.replace(links[i], client.url, '')+'\']';
+                    var selector = `.site-footer-nav a[href*=\'${_.replace(randomLink, client.url, '')}\']`;
                     client.section.footer.click(selector)
                         .verify.urlEquals(links[i])
                         .api.page.RetailMeNotHomePage().navigate();
@@ -58,7 +59,7 @@ var footerCommands = {
 
 var constant = {
     TITLE : 'RetailMeNot: Coupons, Cash Back, Gift Card Deals, Genie & More',
-    PRODUCT : 'HP'
+    PRODUCT : 'Amazon'
 }
 
 

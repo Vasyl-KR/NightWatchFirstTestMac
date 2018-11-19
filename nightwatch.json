@@ -3,6 +3,7 @@
   "output_folder" : "reports",
   "page_objects_path": "pages",
   "custom_assertions_path": "custom",
+  "custom_commands_path": "custom/commands",
 
   "selenium" : {
     "start_process" : true,
