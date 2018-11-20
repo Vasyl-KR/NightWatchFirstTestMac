@@ -8,7 +8,7 @@ function getElementsText() {
 
 util.inherits(getElementsText, EventEmitter);
 
-getElementsText.prototype.command = function(selector) {
+getElementsText.prototype.command = function(selector, cb) {
     var self = this;
    // const api = this.client.api;
 
@@ -21,9 +21,12 @@ getElementsText.prototype.command = function(selector) {
             });
         }
     }).perform(function () {
-         self.emit('complete');
-        logger.Mylogger.info(elText);
-         return elText;
+        if (cb) {
+            cb.call(self.client.api, elText);
+        }
+        self.emit('complete');
+       // logger.Mylogger.info(elText);
+        return this;
     });
 };
 

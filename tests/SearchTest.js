@@ -1,4 +1,5 @@
 var pageConst = require('../pages/RetailMeNotHomePage.js');
+var logger = require('../MyLogger.js');
 
 module.exports = {
 
@@ -14,7 +15,7 @@ module.exports = {
             .setSearchValue(pageConst.expected.PRODUCT)
             .submitSearchValue()
             //.api.page.SearchPage()
-            . getTexts();
+            .assertTexts();
             //.assertSearchText(pageConst.expected.PRODUCT);
 
 

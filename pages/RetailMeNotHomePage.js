@@ -11,9 +11,13 @@ var retailCommands = {
         logger.Mylogger.info('Submitting search form...');
         return this.submitForm('@searchBar');
     },
-    getTexts: function () {
-        var texts = this.getElementsText('.js-facet-label');
-      //  logger.Mylogger.info(this.getElementsText('.js-facet-label'));
+    assertTexts: function () {
+        this.getElementsText('.js-facet-label', text  =>{
+            logger.Mylogger.info(text);
+            this.assert.ok(_.includes(text,'Other'), 'Checking that element list contain \'Other\'');
+
+        });
+        return this;
     }
 
 };
