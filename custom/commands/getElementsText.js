@@ -9,7 +9,6 @@ function getElementsText() {
 util.inherits(getElementsText, EventEmitter);
 
 getElementsText.prototype.command = function(selector, cb) {
-    var self = this;
    // const api = this.client.api;
 
     var elText = [];
@@ -17,14 +16,14 @@ getElementsText.prototype.command = function(selector, cb) {
         for (let i in result.value) {
             this.elementIdText(result.value[i].ELEMENT, function (result) {
                 elText[i] = result.value;
-              // logger.Mylogger.info(elText[i]);
+               logger.Mylogger.info(elText[i]);
             });
         }
-    }).perform(function () {
+    }).perform( () => {
         if (cb) {
-            cb.call(self.client.api, elText);
+            cb.call(this.client.api, elText);
         }
-        self.emit('complete');
+        this.emit('complete');
        // logger.Mylogger.info(elText);
         return this;
     });

@@ -11,10 +11,12 @@ var retailCommands = {
         logger.Mylogger.info('Submitting search form...');
         return this.submitForm('@searchBar');
     },
-    assertTexts: function () {
-        this.getElementsText('.js-facet-label', text  =>{
-            logger.Mylogger.info(text);
-            this.assert.ok(_.includes(text,'Other'), 'Checking that element list contain \'Other\'');
+    assertTexts: function (selector) {
+        const self = this;
+     //   this.getLocationInView('div footer');
+        this.getElementsText('.offer-item-square-title', text  =>{
+           // logger.Mylogger.info(text);
+            this.assert.ok(_.includes(text, constant.TEXT), `Checking that element list contain ${constant.TEXT}`);
 
         });
         return this;
@@ -67,7 +69,8 @@ var footerCommands = {
 
 var constant = {
     TITLE : 'RetailMeNot: Coupons, Cash Back, Gift Card Deals, Genie & More',
-    PRODUCT : 'Amazon'
+    PRODUCT : 'Amazon',
+    TEXT: 'Working Offer'
 }
 
 
@@ -94,6 +97,9 @@ module.exports = {
                 },
                 logInButton: {
                     selector: '[tabindex]'
+                },
+                foot: {
+                  selector: 'div footer'
                 }
 
             }
